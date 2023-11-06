@@ -5,10 +5,10 @@
 }
 /* Ecommerce */
 .container {
-  @apply md:flex gap-5 border-b-[0.0625rem] border-gray-300 pb-10 mb-11;
+  @apply lg:flex gap-5 border-b-[0.0625rem] border-gray-300 pb-10 mb-11;
 }
 .card {
-  @apply grid md:grid-cols-3 sm:grid gap-2 pt-3;
+  @apply grid md:grid-cols-3 gap-2 pt-3;
   @apply cursor-pointer rounded-[5px]  border-gray-300 border-[1px] shadow-sm hover:shadow-md;
 }
 .cardy {
@@ -32,5 +32,8 @@
   @apply w-[546px] mx-auto mt-4 min-h-[65px] py-6 flex justify-between;
 }
 .controldiv {
-  @apply border-[1px] h-[65px] w-[65px] text-[37px] font-normal flex items-center justify-center border-gray-200;
+  @apply border-[1px] h-[35px] w-[35px] text-[23px] font-normal flex items-center justify-center border-gray-200;
+}
+.controlImage {
+  @apply h-[20px] w-[20px];
 }

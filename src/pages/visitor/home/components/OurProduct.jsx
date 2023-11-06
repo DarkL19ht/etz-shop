@@ -67,19 +67,19 @@ function OurProduct() {
       </div>
       <div className={styles.control}>
         <div className={styles.controldiv}>
-          <img src={DPlay} alt="" />
+          <img src={DPlay} alt="" className={styles.controlImage} />
         </div>
         <div className={styles.controldiv}>
-          <img src={DPause} alt="" />
+          <img src={DPause} alt="" className={styles.controlImage} />
         </div>
         <span className={styles.controldiv}>1</span>
         <span className={styles.controldiv}>2</span>
         <span className={styles.controldiv}>3</span>
         <div className={styles.controldiv}>
-          <img src={Pause} alt="" />
+          <img src={Pause} alt="" className={styles.controlImage} />
         </div>
         <div className={styles.controldiv}>
-          <img src={Play} alt="" />
+          <img src={Play} alt="" className={styles.controlImage} />
         </div>
       </div>
       {modalVisible && (

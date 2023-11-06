@@ -35,7 +35,7 @@ function Ecommerce() {
           parts, and more on the go.{' '}
         </p>
       </div>
-      <div className="w-[1300px]">
+      <div className="lg:w-[1300px]">
         <div className={styles.redContainer}>
           <p>HOT SALE!!!</p>
         </div>
