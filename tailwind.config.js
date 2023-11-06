@@ -5,4 +5,16 @@ export default {
     extend: {},
   },
   plugins: [],
+  colors: {
+    transparent: 'transparent',
+    black: '#000',
+    white: '#fff',
+    grey: '#D9D9D9',
+    gray: '#F7F7F7',
+    mob: '#F8FAFF',
+    gray2: '#E3E3E3',
+    grey2: '#3F3F3F',
+    blade: '#232323',
+    blue: '#2885CA',
+  },
 };
