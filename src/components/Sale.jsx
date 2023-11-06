@@ -19,7 +19,7 @@ const Sale = () => {
           parts, and more on the go.
         </p>
       </div>
-      <div className="mt-10 md:mt-0 w-full md:w-[48%]">
+      <div className="mt-10 md:mt-0 w-full md:w-[55%] lg:w-[48%]">
         <button
           type="button"
           className="w-full h-10 bg-red-600 text-white rounded-tl-lg text-left pl-5 mb-5 text-xl font-bold"

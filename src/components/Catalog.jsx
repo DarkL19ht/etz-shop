@@ -13,7 +13,7 @@ const Catalog = () => {
         >
           Product Catalog
         </p>
-        <div className="flex justify-between px-3 md:px-0 w-5/12 md:w-1/12 pt-2 md:pt-0 mt-3">
+        <div className="flex justify-between px-3 md:px-0 w-5/12 md:w-2/12 lg:w-1/12 pt-2 md:pt-0 mt-3">
           <div className="flex justify-between md:w-2/5">
             <img
               src={sort}
