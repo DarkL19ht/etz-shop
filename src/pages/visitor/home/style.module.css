@@ -1,0 +1,36 @@
+/* TOP SECTION */
+.topsection {
+  @apply sm:bg-contain;
+  @apply w-screen mt-6 h-[37rem] bg-hero-pattern bg-no-repeat bg-cover bg-center relative;
+}
+/* Ecommerce */
+.container {
+  @apply md:flex gap-5 border-b-[0.0625rem] border-gray-300 pb-10 mb-11;
+}
+.card {
+  @apply grid md:grid-cols-3 sm:grid gap-2 pt-3;
+  @apply cursor-pointer rounded-[5px]  border-gray-300 border-[1px] shadow-sm hover:shadow-md;
+}
+.cardy {
+  @apply cursor-pointer mb-5 mr-5 relative hover:border-blue-100 hover:border-[5px] rounded-[5px]  border-gray-300 border-[1px] shadow-sm hover:shadow-md;
+}
+
+.redContainer {
+  @apply bg-red-100 pl-3 text-[1.75rem] text-white pt-1 h-[3.125rem] font-extrabold rounded-tl-[10px];
+}
+
+/* PRODUCT SECTION */
+.productCard {
+  @apply grid md:grid-cols-4 gap-4;
+
+  /* @apply lg:grid-cols-4; */
+}
+.product {
+  @apply cursor-pointer relative rounded-[5px] hover:border-blue-100 hover:border-[5px] mb-5 mr-5  border-gray-300 border-[1px] shadow-sm hover:shadow-md;
+}
+.control {
+  @apply w-[546px] mx-auto mt-4 min-h-[65px] py-6 flex justify-between;
+}
+.controldiv {
+  @apply border-[1px] h-[65px] w-[65px] text-[37px] font-normal flex items-center justify-center border-gray-200;
+}

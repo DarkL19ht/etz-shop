@@ -1,0 +1,9 @@
+.modalContainer {
+  @apply h-screen w-screen z-10 absolute top-0 left-0 flex items-center bg-fade justify-center;
+}
+.modalWrapper {
+  @apply h-[500px] w-[500px] bg-white text-black;
+}
+.exit {
+  @apply text-red-100 float-right font-extrabold cursor-pointer;
+}

@@ -1,0 +1,6 @@
+.nav {
+  @apply flex justify-between border-b-[0.0625rem] border-gray-300 items-center py-3;
+}
+.btn {
+  @apply flex gap-3;
+}

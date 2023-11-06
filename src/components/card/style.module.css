@@ -1,0 +1,9 @@
+.card {
+  @apply min-h-[190px] border-gray-200 rounded-md  mt-2;
+}
+.text {
+  @apply font-light text-[1rem] leading-6 p-1;
+}
+.price {
+  @apply font-semibold text-xs leading-[1.875rem] p-1;
+}
