@@ -9,7 +9,7 @@
 }
 .card {
   @apply grid md:grid-cols-3 gap-2 pt-3;
-  @apply cursor-pointer rounded-[5px]  border-gray-300 border-[1px] shadow-sm hover:shadow-md;
+  @apply cursor-pointer rounded-[5px]   shadow-sm hover:shadow-md;
 }
 .cardy {
   @apply cursor-pointer mb-5 mr-5 relative hover:border-blue-100 hover:border-[5px] rounded-[5px]  border-gray-300 border-[1px] shadow-sm hover:shadow-md;
