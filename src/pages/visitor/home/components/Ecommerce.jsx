@@ -14,7 +14,7 @@ function Ecommerce() {
   const handleDivClick = (item) => {
     setSelectedItem(item);
     setModalVisible(true);
-    document.body.style.background = 'hidden'; // Disable scrolling
+    document.body.style.overflow = 'hidden'; // Disable scrolling
   };
 
   const closeModal = () => {

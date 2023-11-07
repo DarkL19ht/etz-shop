@@ -4,19 +4,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
 
-*{
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
-h2{
-    @apply text-base font-semibold leading-[2.8125rem] text-left;
+h2 {
+  @apply text-base font-semibold leading-[2.8125rem] text-left;
 }
-
 
 .disable-flow {
-    overflow: hidden;
+  overflow: hidden;
 }
-

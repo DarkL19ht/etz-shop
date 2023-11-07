@@ -5,7 +5,7 @@ import styles from './style.module.css';
 
 function Card({ image, text, price, imagealt }) {
   return (
-    <div className="w-[92%] mx-auto ml-4">
+    <div className="w-[92%] mx-auto">
       <div className={styles.card}>
         <img src={image} alt={imagealt} />
       </div>

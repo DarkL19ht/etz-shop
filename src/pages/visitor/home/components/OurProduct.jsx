@@ -23,12 +23,12 @@ function OurProduct() {
   const handleDivClick = (item) => {
     setSelectedItem(item);
     setModalVisible(true);
-    document.body.classList.add('disable-flow'); // Disable scrolling
+    
   };
 
   const closeModal = () => {
     setModalVisible(false);
-    document.body.classList.remove('disable-flow'); // Enable scrolling
+
   };
   return (
     <div className="relative">
