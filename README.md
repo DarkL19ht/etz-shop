@@ -1,2 +1,2 @@
 # etz-shop
-etz training project
+etz training project.
