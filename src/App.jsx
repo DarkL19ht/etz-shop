@@ -6,7 +6,8 @@ import Pagination from './components/Pagination';
 
 function App() {
   return (
-    <main className="px-5 md:px-10 py-5 text-sm">
+    <main className="px-5 py-5 text-sm md:px-10">
+      {import.meta.env.VITE_APP_NAME}
       <Nav />
       <Hero />
       <Sale />

@@ -1,8 +1,38 @@
-# React + Vite
+## Project Name
+Etranzact Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the project
 
-Currently, two official plugins are available:
+## Core Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [REACT JS](https://react.dev/learn)
+- [TAILWINDCSS](https://tailwindcss.com/)
+- [REDUX TOOLKIT]()
+- [REACT QUERY]()
+- [REDUX PERSIST]()
+- [REACT HOOK FORM]()
+- [REACT FORMIK]()
+- [REACT TABLE]()
+- [REACT SELECT]()
+- [LODASH]()
+- [HEADLESS UI]()
+  
+## How to start on local
+
+## Web URL
+
+
+## API BaseURL
+
+
+## Project Tasks
+
+- [ ] Set up UI components
+- [ ] Set up local state management
+- [ ] set up server state management
+- [ ] set up absolute importing
+- [ ] set up environment variables
+- [ ] tailwindcss form, tailwindcss prettier, debug-screen
+
+## Assignment
+- Husky and Lint-staged
