@@ -1,7 +1,6 @@
-.button{
-@apply w-[120px] h-[35px] rounded-tr-[0.625rem] bg-red-100 text-white flex text-center justify-center;
+.button {
+  @apply flex h-[35px] w-[120px] justify-center rounded-tr-[0.625rem] bg-red-100 text-center text-white;
 }
-.btno{
-    @apply bg-blue-100 rounded-[0.625rem] w-[9.375rem] h-[3.125rem] text-white flex text-center justify-center ;
+.btno {
+  @apply flex h-[3.125rem] w-[9.375rem] justify-center rounded-[0.625rem] bg-blue-100 text-center text-white;
 }
-

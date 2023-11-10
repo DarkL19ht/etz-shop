@@ -23,23 +23,21 @@ function OurProduct() {
   const handleDivClick = (item) => {
     setSelectedItem(item);
     setModalVisible(true);
-    
   };
 
   const closeModal = () => {
     setModalVisible(false);
-
   };
   return (
     <div className="relative">
-      <div className="flex justify-between border-b-[0.0625rem] border-gray-300 pb-1 mb-10">
+      <div className="mb-10 flex justify-between border-b-[0.0625rem] border-gray-300 pb-1">
         <h2>Product Catalog</h2>
         <div className="flex gap-3">
-          <span className="flex gap-3 items-center">
+          <span className="flex items-center gap-3">
             <img src={Toogle} alt="" />
             <p>Sort</p>
           </span>
-          <span className="flex gap-3 items-center">
+          <span className="flex items-center gap-3">
             <p>Date</p>
             <img src={ArrowDown} alt="" />
           </span>
@@ -89,18 +87,18 @@ function OurProduct() {
             <div className="flex gap-4">
               <img src={selectedItem.image} alt="" />
               <div>
-                <p className="text-[26px] font-light lagging-[54px]">
+                <p className="lagging-[54px] text-[26px] font-light">
                   20000mAh Intelligence Portable Power Bank
                 </p>
-                <div className="flex py-6 gap-3">
-                  <button className="h-[41px] rounded-[5px] w-[122px]  bg-gray-300">
+                <div className="flex gap-3 py-6">
+                  <button className="h-[41px] w-[122px] rounded-[5px] bg-gray-300">
                     Category A
                   </button>
                   <button className="h-[41px] w-[122px]  bg-gray-300">
                     Category B
                   </button>
                 </div>
-                <h2 className="text-[40px] rounded-[5px] font-[700] lagging-[75px]">
+                <h2 className="lagging-[75px] rounded-[5px] text-[40px] font-[700]">
                   Price: {selectedItem.price}
                 </h2>
               </div>
