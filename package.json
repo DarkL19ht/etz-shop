@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start:development-olamide": "vite --node development --port 4500 open",
+    "start:development": "vite --node development --port 4500 open",
+    "start:production": "vite --node production --port 4500 open",
+    "start:staging": "vite --node staging --port 4500 open",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
