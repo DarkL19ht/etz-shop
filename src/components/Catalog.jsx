@@ -1,7 +1,7 @@
 import React from 'react';
 import sort from '../assets/sortVector.png';
 import date from '../assets/dateVector.png';
-import catalog from '../utils/catalog';
+import catalog from '../data/catalog';
 
 const Catalog = () => {
   return (
