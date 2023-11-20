@@ -1,12 +1,12 @@
 import React from 'react';
 import sort from '../assets/sortVector.png';
 import date from '../assets/dateVector.png';
-import catalog from '../utils/catalog';
+import catalog from '../data/catalog';
 
 const Catalog = () => {
   return (
     <>
-      <div className="md:flex md:justify-between mt-16 md:mt-10 border-b-2 border-sky-500 pb-1">
+      <div className="md:flex md:justify-between mt-16 md:mt-10 border-b-2 border-sky-500 pb-1 ">
         <p
           className="font-bold text-4xl md:text-lg text-center md:text-left"
           autoCapitalize="characters"

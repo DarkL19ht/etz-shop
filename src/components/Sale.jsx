@@ -1,5 +1,5 @@
 import React from 'react';
-import hotSale from '../utils/hotSale';
+import hotSale from '../data/hotSale';
 
 const Sale = () => {
   return (
