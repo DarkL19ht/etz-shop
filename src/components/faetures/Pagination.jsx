@@ -1,7 +1,7 @@
-import prev from '../assets/prev.png';
-import back from '../assets/back.png';
-import forward from '../assets/forward.png';
-import next from '../assets/next.png';
+import prev from '@/assets/prev.png';
+import back from '@/assets/back.png';
+import forward from '@/assets/forward.png';
+import next from '@/assets/next.png';
 
 const Pagination = () => {
   return (
