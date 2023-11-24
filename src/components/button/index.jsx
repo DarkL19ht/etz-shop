@@ -9,9 +9,9 @@ export function Button({ text}) {
   </div>
 }
 
-export function NavButton({ text }) {
+export function NavButton({ text, onClick }) {
   return <div className={styles.btno}>
-    <button>{text}</button>
+    <button onClick={onClick}>{text}</button>
   </div>
 }
 
