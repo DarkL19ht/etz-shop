@@ -1,14 +1,14 @@
-import React from 'react';
-import hotSale from '../data/hotSale';
+import React from "react";
+import hotSale from "../../data/hotSale";
 
 const Sale = () => {
   return (
-    <div className="md:flex md:justify-between mt-10 border-b-2 pb-0 md:pb-10">
+    <div className="mt-10 border-b-2 pb-0 md:flex md:justify-between md:pb-10">
       <div className="w-full md:w-[40%]">
-        <h2 className="font-bold text-xl md:text-2xl mb-0 md:mb-2">
+        <h2 className="mb-0 text-xl font-bold md:mb-2 md:text-2xl">
           About the eCommerce Website
         </h2>
-        <h2 className="text-lg md:text-2xl font-semibold text-slate-400 mb-0 md:mb-2">
+        <h2 className="mb-0 text-lg font-semibold text-slate-400 md:mb-2 md:text-2xl">
           Groceries
         </h2>
         <p className="text-sm md:text-lg">
@@ -19,20 +19,20 @@ const Sale = () => {
           parts, and more on the go.
         </p>
       </div>
-      <div className="mt-10 md:mt-0 w-full md:w-[55%] lg:w-[48%]">
+      <div className="mt-10 w-full md:mt-0 md:w-[55%] lg:w-[48%]">
         <button
           type="button"
-          className="w-full h-10 bg-red-600 text-white rounded-tl-lg text-left pl-5 mb-5 text-xl font-bold"
+          className="mb-5 h-10 w-full rounded-tl-lg bg-red-600 pl-5 text-left text-xl font-bold text-white"
         >
           HOT SALE!!!
         </button>
         <div className="md:flex md:justify-between">
           {hotSale.map((value) => (
             <div
-              className="flex-col border-2 p-1 rounded-md drop-shadow-lg hover:shadow-slate-600 hover:border-sky-500 hover:border-2 hover:shadow-lg bg-white hover:cursor-pointer mb-10 md:mb-0"
+              className="mb-10 flex-col rounded-md border-2 bg-white p-1 drop-shadow-lg hover:cursor-pointer hover:border-2 hover:border-sky-500 hover:shadow-lg hover:shadow-slate-600 md:mb-0"
               key={value.id}
             >
-              <img src={value.img} alt="product one" className="w-full mb-3" />
+              <img src={value.img} alt="product one" className="mb-3 w-full" />
               <div className="w-full text-lg md:text-sm">
                 {value.productTitle}
               </div>
