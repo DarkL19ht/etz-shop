@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Modal from "@/components/ui/Modal";
+import Button from "@/components/ui/Button";
 
 function Nav() {
   const [openModal, setOpenModal] = useState(false);
@@ -24,12 +25,7 @@ function Nav() {
           >
             LOGIN
           </button>
-          <button
-            type="button"
-            className="w-20 rounded-lg bg-sky-500 py-2 md:w-28 md:py-0"
-          >
-            REGISTER
-          </button>
+          <Button title="REGISTER" variant="secondary" size="md" />
           <Link
             type="button"
             className="w-20 rounded-lg bg-sky-500 py-2 md:w-28 md:py-0"
