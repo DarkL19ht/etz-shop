@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Hero = () => {
   return (
@@ -6,11 +6,11 @@ const Hero = () => {
       <img
         src="../src/assets/Slider_2-(1) 1.png"
         alt="sale banner"
-        className="w-full -mb-7"
+        className="-mb-7 w-full"
       />
       <button
         type="button"
-        className="bg-red-600 text-white font-semibold md:font-bold w-24 h-5 md:h-7 rounded-tr-lg"
+        className="h-5 w-24 rounded-tr-lg bg-red-600 font-semibold text-white md:h-7 md:font-bold"
       >
         SHOP NOW
       </button>

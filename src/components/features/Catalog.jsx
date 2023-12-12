@@ -1,38 +1,37 @@
-import React from 'react';
-import sort from '../assets/sortVector.png';
-import date from '../assets/dateVector.png';
-import catalog from '../data/catalog';
+import sort from "@/assets/sortVector.png";
+import date from "@/assets/dateVector.png";
+import catalog from "@/data/catalog";
 
 const Catalog = () => {
   return (
     <>
-      <div className="md:flex md:justify-between mt-16 md:mt-10 border-b-2 border-sky-500 pb-1 ">
+      <div className="mt-16 border-b-2 border-sky-500 pb-1 md:mt-10 md:flex md:justify-between ">
         <p
-          className="font-bold text-4xl md:text-lg text-center md:text-left"
+          className="text-center text-4xl font-bold md:text-left md:text-lg"
           autoCapitalize="characters"
         >
           Product Catalog
         </p>
-        <div className="flex justify-between px-3 md:px-0 w-5/12 md:w-2/12 lg:w-1/12 pt-2 md:pt-0 mt-3">
+        <div className="mt-3 flex w-5/12 justify-between px-3 pt-2 md:w-2/12 md:px-0 md:pt-0 lg:w-1/12">
           <div className="flex justify-between md:w-2/5">
             <img
               src={sort}
               alt="sort vector"
-              className="w-[40%] h-[60%] pt-1 mr-1 md:mr-0"
+              className="mr-1 h-[60%] w-[40%] pt-1 md:mr-0"
             />
             <p className=" font-semibold md:font-normal">Sort</p>
           </div>
-          <div className="flex justify-between w-2/5">
+          <div className="flex w-2/5 justify-between">
             <p className=" font-bold">Date</p>
             <img
               src={date}
               alt="date vector"
-              className="w-[30%] h-[50%] pt-1 mt-[7%]"
+              className="mt-[7%] h-[50%] w-[30%] pt-1"
             />
           </div>
         </div>
       </div>
-      <div className="md:flex md:justify-between w-[100%] mt-5">
+      <div className="mt-5 w-[100%] md:flex md:justify-between">
         {catalog.map((item) => {
           return (
             // eslint-disable-next-line react/jsx-no-useless-fragment
@@ -40,14 +39,14 @@ const Catalog = () => {
               {item.id < 5 && (
                 <div
                   className={`${
-                    item.bestSeller ? 'border-2 border-red-600' : ''
-                  } flex-col border-2 mb-10 md:mb-0 p-1 rounded-md w-full md:w-[22.5%] drop-shadow-lg hover:shadow-slate-600 hover:border-sky-500 hover:border-2 hover:shadow-lg bg-white hover:cursor-pointer`}
+                    item.bestSeller ? "border-2 border-red-600" : ""
+                  } mb-10 w-full flex-col rounded-md border-2 bg-white p-1 drop-shadow-lg hover:cursor-pointer hover:border-2 hover:border-sky-500 hover:shadow-lg hover:shadow-slate-600 md:mb-0 md:w-[22.5%]`}
                   key={item.id}
                 >
                   {item.bestSeller && (
                     <button
                       type="button"
-                      className="bg-red-600 text-white font-bold w-24 h-7 rounded-bl-lg absolute top-0 right-0 "
+                      className="absolute right-0 top-0 h-7 w-24 rounded-bl-lg bg-red-600 font-bold text-white "
                     >
                       SHOP NOW
                     </button>
@@ -55,7 +54,7 @@ const Catalog = () => {
                   <img
                     src={item.img}
                     alt="product one"
-                    className="w-full mb-3"
+                    className="mb-3 w-full"
                   />
                   <div className="w-full">{item.productTitle}</div>
                   <p className="font-bold ">{item.price}</p>
@@ -65,7 +64,7 @@ const Catalog = () => {
           );
         })}
       </div>
-      <div className="md:flex md:justify-between w-[100%] mt-5">
+      <div className="mt-5 w-[100%] md:flex md:justify-between">
         {catalog.map((item) => {
           return (
             // eslint-disable-next-line react/jsx-no-useless-fragment
@@ -73,14 +72,14 @@ const Catalog = () => {
               {item.id > 4 && (
                 <div
                   className={`${
-                    item.bestSeller ? 'border-2 border-red-600' : ''
-                  } flex-col border-2 mb-10 md:mb-0 p-1 rounded-md w-full md:w-[22.5%] drop-shadow-lg hover:shadow-slate-600 hover:border-sky-500 hover:border-2 hover:shadow-lg bg-white hover:cursor-pointer`}
+                    item.bestSeller ? "border-2 border-red-600" : ""
+                  } mb-10 w-full flex-col rounded-md border-2 bg-white p-1 drop-shadow-lg hover:cursor-pointer hover:border-2 hover:border-sky-500 hover:shadow-lg hover:shadow-slate-600 md:mb-0 md:w-[22.5%]`}
                   key={item.id}
                 >
                   {item.bestSeller && (
                     <button
                       type="button"
-                      className="bg-red-600 text-white font-bold w-24 h-7 rounded-bl-lg absolute top-0 right-0 "
+                      className="absolute right-0 top-0 h-7 w-24 rounded-bl-lg bg-red-600 font-bold text-white "
                     >
                       SHOP NOW
                     </button>
@@ -88,7 +87,7 @@ const Catalog = () => {
                   <img
                     src={item.img}
                     alt="product one"
-                    className="w-full mb-3"
+                    className="mb-3 w-full"
                   />
                   <div className="w-full">{item.productTitle}</div>
                   <p className="font-bold ">{item.price}</p>
