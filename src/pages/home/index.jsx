@@ -1,17 +1,17 @@
-import React from 'react'
-import Nav from '@/components/layout/Nav'
-import Hero from '@/components/faetures/Hero'
-import Pagination from '@/components/faetures/Pagination'
-import Sale from '@/components/faetures/Sale'
-import Catalog from '@/components/faetures/Catalog'
-export const Home = () => {
+import Nav from "@/components/features/Nav";
+import Hero from "@/components/features/Hero";
+import Sale from "@/components/features/Sale";
+import Catalog from "@/components/features/Catalog";
+import Pagination from "@/components/features/Pagination";
+
+export default function index() {
   return (
-    <div className="px-5 py-5 text-sm md:px-10">
-        <Nav />
+    <main className="px-5 py-5 text-sm md:px-10">
+      <Nav />
       <Hero />
       <Sale />
       <Catalog />
       <Pagination />
-    </div>
-  )
+    </main>
+  );
 }

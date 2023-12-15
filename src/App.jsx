@@ -1,14 +1,11 @@
-import RouteRenderer from './route/route-renderer';
-import { BrowserRouter } from 'react-router-dom';
-
+import { BrowserRouter as Router } from "react-router-dom";
+import RouteRenderer from "./route/route-renderer";
 
 function App() {
   return (
-    <main>
-      <BrowserRouter>
+    <Router>
       <RouteRenderer />
-      </BrowserRouter>
-    </main>
+    </Router>
   );
 }
 

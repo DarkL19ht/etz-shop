@@ -64,3 +64,15 @@ function App() {
 export default App;
 
 ```
+
+```
+react - client side  CSR
+remix - serverside SSR
+gatsby - SSG
+Next - client/serverside/static site generator SSG
+
+
+angular - google
+
+
+```
