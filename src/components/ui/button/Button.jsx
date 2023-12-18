@@ -33,7 +33,16 @@ const buttonVariants = cva(
 
 const Button = forwardRef(
   (
-    { size, variant, className, loadingText, text, isLoading, ...props },
+    {
+      size,
+      variant,
+      className,
+      loadingText,
+      text,
+      isLoading,
+      isFullWidth,
+      ...props
+    },
     ref
   ) => {
     return (
@@ -42,6 +51,7 @@ const Button = forwardRef(
         type="button"
         className={cn(buttonVariants({ className, variant, size }), {
           "bg-lemon-100": isLoading === true,
+          "w-[80%]": isFullWidth === true,
         })}
         {...props}
       >

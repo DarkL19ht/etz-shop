@@ -19,6 +19,7 @@ export default function index() {
         isLoading={false}
         loadingText="please wait ..."
         text="Login"
+        isFullWidth
       />
     </main>
   );
