@@ -32,7 +32,10 @@ const buttonVariants = cva(
 // }
 
 const Button = forwardRef(
-  ({ size, variant, className, children, isLoading, ...props }, ref) => {
+  (
+    { size, variant, className, loadingText, text, isLoading, ...props },
+    ref
+  ) => {
     return (
       <button
         ref={ref}
@@ -42,10 +45,15 @@ const Button = forwardRef(
         })}
         {...props}
       >
-        <div className="flex items-center justify-center gap-3 align-middle">
-          {isLoading && <Loader />}
-          {children}
+        <div>
+          {isLoading && (
+            <div className="flex items-center justify-center gap-3 align-middle">
+              <Loader />
+              {loadingText}
+            </div>
+          )}
         </div>
+        {!isLoading && text && <div>{text}</div>}
       </button>
     );
   }

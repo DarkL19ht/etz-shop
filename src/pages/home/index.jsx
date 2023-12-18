@@ -13,10 +13,13 @@ export default function index() {
       <Sale />
       <Catalog />
       <Pagination />
-      <Button variant={"lemony"} size={"large"} isLoading={false}>
-        <h2 className="font-bold">please wait </h2>
-        <h1 className="pb-2 font-bold">...</h1>
-      </Button>
+      <Button
+        variant={"lemony"}
+        size={"large"}
+        isLoading={false}
+        loadingText="please wait ..."
+        text="Login"
+      />
     </main>
   );
 }
