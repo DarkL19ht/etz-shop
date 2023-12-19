@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn-primary {
+    background-color: coral;
+}

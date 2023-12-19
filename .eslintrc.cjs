@@ -28,11 +28,9 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 0,
     'react/function-component-definition': 0,
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto',
-      },
-    ],
+    'prettier/prettier': 0,
+    'import/extensions':0,
+    'import/no-unresolved':0,
+    'react/jsx-props-no-spreading':0,
   },
 };
