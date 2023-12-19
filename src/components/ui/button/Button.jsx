@@ -26,6 +26,7 @@ const buttonVariants = cva(
       },
       loading: {
         true: "bg-lemon-100",
+        false: "bg-lemon-200 text-white",
       },
     },
     compoundVariants: [

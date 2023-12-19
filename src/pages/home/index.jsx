@@ -14,12 +14,12 @@ export default function index() {
       <Catalog />
       <Pagination />
       <Button
-        variant={"lemony"}
-        size={"lg"}
+        variant="lemony"
+        size="lg"
         loadingText="please wait ..."
         text="Login"
-        fullWidth
-        loading
+        fullWidth={false}
+        loading={false}
         disabled
       />
     </main>
