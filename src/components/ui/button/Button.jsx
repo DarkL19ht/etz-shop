@@ -1,5 +1,5 @@
 import { cva } from "class-variance-authority";
-import React, { ButtonHTMLAttributes, FC, forwardRef } from "react";
+import React from "react";
 import { cn } from "@/utils/helpers";
 import Loader from "../loader";
 
@@ -32,7 +32,7 @@ const buttonVariants = cva(
       {
         variant: "primary",
         size: "sm",
-        class: "uppercase rounded-md",
+        className: "uppercase rounded-md",
       },
     ],
     defaultVariants: {
