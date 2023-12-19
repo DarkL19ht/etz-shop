@@ -15,11 +15,12 @@ export default function index() {
       <Pagination />
       <Button
         variant={"lemony"}
-        size={"large"}
-        isLoading={false}
+        size={"lg"}
         loadingText="please wait ..."
         text="Login"
-        isFullWidth
+        fullWidth
+        loading
+        disabled
       />
     </main>
   );

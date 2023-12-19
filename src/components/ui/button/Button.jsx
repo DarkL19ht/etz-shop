@@ -14,13 +14,32 @@ const buttonVariants = cva(
         alert: "bg-yellow-500",
       },
       size: {
-        small: "py-2 px-4",
-        large: "text-xl py-3 px-6",
+        sm: "py-2 px-2",
+        md: "px-4 py-2",
+        lg: "py-3 px-6",
+      },
+      fullWidth: {
+        true: "w-full",
+      },
+      disabled: {
+        true: "bg-gray-300 cursor-not-allowed",
+      },
+      loading: {
+        true: "bg-lemon-100",
       },
     },
+    compoundVariants: [
+      {
+        variant: "primary",
+        size: "sm",
+        class: "uppercase rounded-md",
+      },
+    ],
     defaultVariants: {
-      size: "small",
+      size: "sm",
       variant: "primary",
+      fullWidth: true,
+      disabled: false,
     },
   }
 );
@@ -31,42 +50,43 @@ const buttonVariants = cva(
 //     ref?: React.Ref<HTMLButtonElement>;
 // }
 
-const Button = forwardRef(
-  (
-    {
-      size,
-      variant,
-      className,
-      loadingText,
-      text,
-      isLoading,
-      isFullWidth,
-      ...props
-    },
-    ref
-  ) => {
-    return (
-      <button
-        ref={ref}
-        type="button"
-        className={cn(buttonVariants({ className, variant, size }), {
-          "bg-lemon-100": isLoading === true,
-          "w-[80%]": isFullWidth === true,
-        })}
-        {...props}
-      >
-        <div>
-          {isLoading && (
-            <div className="flex items-center justify-center gap-3 align-middle">
-              <Loader />
-              {loadingText}
-            </div>
-          )}
-        </div>
-        {!isLoading && text && <div>{text}</div>}
-      </button>
-    );
-  }
-);
+const Button = ({
+  size,
+  variant,
+  className,
+  loadingText,
+  text,
+  disabled,
+  loading,
+  fullWidth,
+  ...props
+}) => {
+  return (
+    <button
+      type="button"
+      className={cn(
+        buttonVariants({
+          className,
+          variant,
+          size,
+          fullWidth,
+          loading,
+          disabled,
+        })
+      )}
+      {...props}
+    >
+      <div>
+        {loading && (
+          <div className="flex items-center justify-center gap-3 align-middle">
+            <Loader />
+            {loadingText}
+          </div>
+        )}
+      </div>
+      {!loading && text && <div>{text}</div>}
+    </button>
+  );
+};
 
 export default Button;
