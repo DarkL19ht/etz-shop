@@ -26,7 +26,7 @@ function Nav() {
           >
             LOGIN
           </button>
-          <Button title="REGISTER" variant="primary" disabled />
+          {/* <Button title="REGISTER" variant="primary" disabled /> */}
 
           <Link
             type="button"
@@ -65,7 +65,10 @@ function Nav() {
             title="Read More"
             size="sm"
             fullWidth
-            disabled
+            className='flex justify-center self-center'
+            isLoading
+            loadingText='Please Wait...'
+            disabled={false}
           />
           <SubmitButton
             variant="primary"

@@ -1,8 +1,9 @@
 import React from "react";
 import { cva } from "class-variance-authority";
 import cn from "@/utils/tailwind-merge";
+import { SpinnerCircular } from "spinners-react";
 
-const buttonVariants = cva("text-base uppercase", {
+const buttonVariants = cva("text-base", {
   variants: {
     variant: {
       primary: "bg-green-500 text-white",
@@ -10,39 +11,71 @@ const buttonVariants = cva("text-base uppercase", {
       cancel: "bg-gray-500",
     },
     size: {
-      sm: 'px-2 py-2',
-      md: 'px-4 py-2',
-      lg: 'px-6 py-3',
+      sm: "px-2 py-2",
+      md: "px-4 py-2",
+      lg: "px-6 py-3",
     },
     fullWidth: {
-      true: "w-full"
+      true: "w-full",
     },
     disabled: {
-      true: "bg-gray-100 cursor-not-allowed"
-    }
+      true: "bg-gray-100 cursor-not-allowed",
+    },
+    loading: {
+      true: "relative text-center",
+    },
   },
   compoundVariants: [
     {
       variant: "primary",
       size: "sm",
-      class: "uppercase rounded-md"
-    }
+      class: "rounded-md",
+    },
   ],
   defaultVariants: {
-    variant:"primary",
+    variant: "primary",
     fullWidth: false,
     disabled: false,
-    size: "sm"
+    size: "sm",
+    loading: false,
   },
 });
 
-export default function ETZButton({variant, size, className, title, fullWidth, disabled}) {
+export default function ETZButton({
+  variant,
+  size,
+  className,
+  title,
+  fullWidth,
+  disabled,
+  isLoading,
+  loadingText,
+}) {
   return (
     <button
       type="button"
-      className={cn(buttonVariants({ variant, size, className, fullWidth, disabled }))}
+      className={cn(
+        buttonVariants({
+          variant,
+          size,
+          className,
+          fullWidth,
+          disabled,
+          loading: isLoading,
+        })
+      )}
     >
-      {title}
+      {isLoading && (
+        <SpinnerCircular
+          size={28}
+          thickness={140}
+          speed={180}
+          color="white"
+          secondaryColor="rgba(0, 0, 0, 0.44)"
+          className="mr-2"
+        />
+      )}
+      {isLoading ? loadingText : title}
     </button>
   );
 }
