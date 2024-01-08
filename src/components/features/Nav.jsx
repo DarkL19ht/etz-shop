@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import SubmitButton from "@components/ui/SubmitButton";
 import Modal from "@/components/ui/Modal";
 import Button from "@/components/ui/Button";
-import ETZButton from "@/components/ui/ETZButton";
-import SubmitButton from "../ui/Submit";
 
 function Nav() {
   const [openModal, setOpenModal] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const handleCloseModal = () => setOpenModal(false);
+
+  const checking = () => {
+    setIsLoading(true);
+    setTimeout(() => setIsLoading(false), 4000);
+  };
 
   return (
     <>
@@ -44,7 +48,7 @@ function Nav() {
           </Link>
         </div>
       </nav>
-      <Modal title="darkLight" isOpen={openModal} closeModal={handleCloseModal}>
+      <Modal title="etranzact" isOpen={openModal} closeModal={handleCloseModal}>
         <div className="mt-2">
           <p className="text-sm text-gray-500">
             Your payment has been successfully submitted. We’ve sent you an
@@ -53,20 +57,6 @@ function Nav() {
         </div>
 
         <div className="mt-4 flex justify-between gap-2">
-          {/* <button
-            type="button"
-            className=" justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-            onClick={null}
-          >
-            Submit
-          </button> */}
-          <ETZButton
-            variant="primary"
-            title="Read More"
-            size="sm"
-            fullWidth
-            disabled
-          />
           <SubmitButton
             variant="primary"
             title="Submit"
@@ -74,7 +64,7 @@ function Nav() {
             fullWidth
             loadingText="Please Wait..."
             isLoading={isLoading}
-            onClick={() => setIsLoading(true)}
+            onClick={checking}
           />
         </div>
       </Modal>

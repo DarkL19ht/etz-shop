@@ -5,34 +5,34 @@ import cn from "@/utils/tailwind-merge";
 const buttonVariants = cva("text-base uppercase", {
   variants: {
     variant: {
-      primary: "bg-green-500 text-white",
+      primary: "bg-green-200 text-black",
       secondary: "bg-red-500",
       cancel: "bg-gray-500",
     },
     size: {
-      sm: 'px-2 py-2',
-      md: 'px-4 py-2',
-      lg: 'px-6 py-3',
+      sm: "px-2 py-2",
+      md: "px-4 py-2",
+      lg: "px-6 py-3",
     },
     fullWidth: {
-      true: "w-full"
+      true: "w-full",
     },
     disabled: {
-      true: "bg-gray-100 cursor-not-allowed"
-    }
+      true: "bg-gray-100 cursor-not-allowed",
+    },
   },
   compoundVariants: [
     {
       variant: "primary",
       size: "sm",
-      class: "uppercase rounded-md"
-    }
+      class: "uppercase rounded-md",
+    },
   ],
   defaultVariants: {
-    variant:"primary",
+    variant: "primary",
     fullWidth: false,
     disabled: false,
-    size: "sm"
+    size: "sm",
   },
 });
 

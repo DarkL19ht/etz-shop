@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-const getSize = () => {
+const getSize = (size) => {
   switch (size) {
     case "sm":
       return "px-4 py-2";
@@ -14,8 +14,9 @@ const getSize = () => {
 export default function Button({
   title,
   className,
-  type = "button",
+  type,
   variant,
+  size,
   ...props
 }) {
   const getVariant = useMemo(() => {
@@ -31,15 +32,15 @@ export default function Button({
 
   return (
     <button
-      type={type}
+      type="button"
       className={`rounded-md bg-red-500 ${getVariant} ${getSize(
-        (size = "lg")
+        (size === "lg")
       )} ${className}`}
       {...props}
     >
       {title}
     </button>
-  );
+  )
 }
 
 Button.defaultProps = {
