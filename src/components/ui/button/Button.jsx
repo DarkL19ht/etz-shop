@@ -59,12 +59,14 @@ const Button = ({
   text,
   disabled,
   loading,
+  onClick,
   fullWidth,
   ...props
 }) => {
   return (
     <button
       type="button"
+      onClick={onClick}
       className={cn(
         buttonVariants({
           className,
