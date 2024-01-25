@@ -1,18 +1,17 @@
 import Nav from "@/components/features/Nav";
 import Hero from "@/components/features/Hero";
-import Incoming from "@/components/features/Incoming";
-import Faq from "@/components/features/Faq";
-import JoinUs from "@/components/features/JoinUs";
+import Sale from "@/components/features/Sale";
+import Catalog from "@/components/features/Catalog";
+import Pagination from "@/components/features/Pagination";
 
 export default function index() {
-  const active = "inactive"
   return (
-    <main className="px-5 py-5 text-sm md:px-48">
-      <Nav active={active} />
+    <main className="px-5 py-5 text-sm md:px-10">
+      <Nav />
       <Hero />
-      <Incoming />
-      <Faq />
-      <JoinUs />
+      <Sale />
+      <Catalog />
+      <Pagination />
     </main>
   );
 }
