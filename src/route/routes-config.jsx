@@ -1,6 +1,7 @@
 import Home from "@/pages/home";
-import CategoryPage from "@/pages/category";
-import ProductPage from "@/pages/product";
+import AboutUs from "@/pages/about-us";
+import TermsAndConditions from "@/pages/terms&conditions";
+import PrivacyPolicy from "@/pages/privacyPolicy";
 
 const routeConfig = [
   {
@@ -8,12 +9,16 @@ const routeConfig = [
     element: <Home />,
   },
   {
-    path: "/category",
-    element: <CategoryPage />,
+    path: "/aboutUs",
+    element: <AboutUs />,
   },
   {
-    path: "/products",
-    element: <ProductPage />,
+    path: "/terms&conditions",
+    element: <TermsAndConditions />,
+  },
+  {
+    path: "/privacyPolicy",
+    element: <PrivacyPolicy />,
   },
 ];
 

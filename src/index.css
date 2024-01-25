@@ -2,6 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn-primary {
-    background-color: coral;
+@font-face {
+    font-family: neueMontrealFont;
+    src: url(/neueMontreal/NeueMontreal-Regular.otf);
 }
+
+* {
+    font-family: neueMontrealFont, 'Gill Sans', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.btn-primary {
+    background-color: #F38021;
+}
+
+.mini-title {
+    background-color: #FEF2E9;
+    color: #F38021;
+}
+
+.mini-title2 {
+    background-color: #E9F5FE;
+    color: #2196F3;
+}
+
+.primary-color {
+    color: #2196F3;
+}
+
+.primary-bg {
+    background-color: #2196F3;
+}
+
+.primary-text-color {
+    color: #4D4F51;
+}
+
+.waitlist-input {
+    border-color: #ABB0B4;
+    background-color: #F7F7F8;
+}
+
+.waitlist-bg {
+    background-color: #F7F7F8;
+}
+
+.bg-focus:hover{
+background: #F38021;
+}
+
+.aboutUsBg {
+    background-image: url(../src/assets/aboutUsBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ourMissionBg {
+    background-color: #FEF2E9;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.ourStoryRight {
+    background-color: #FEF2E9;
+}
+

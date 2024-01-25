@@ -3,20 +3,21 @@ import { cva } from "class-variance-authority";
 import { ImSpinner } from "react-icons/im";
 import cn from "@/utils/tailwind-merge";
 
-const buttonVariants = cva("text-base uppercase", {
+const buttonVariants = cva("text-base", {
   variants: {
     variant: {
       primary: "bg-green-200 text-black",
-      secondary: "bg-red-500",
+      secondary: "btn-primary text-white text-base font-semibold",
       cancel: "bg-gray-500",
+      none: "bg-transparent border ",
     },
     size: {
-      sm: "px-2 py-2",
+      sm: "px-4 py-2 rounded-full",
       md: "px-4 py-2",
       lg: "px-6 py-3",
     },
     buttonHeight: {
-      sm: "py-2"
+      sm: "py-2",
     },
     fullWidth: {
       true: "w-full",
@@ -68,7 +69,7 @@ export default function SubmitButton({
 
         {/* <img src="" alt="loading" className={cn(buttonVariants({ isLoading }))} /> */}
         {isLoading ? (
-          <div >{loadingText}</div>
+          <div>{loadingText}</div>
         ) : (
           <div className="w-full">{title}</div>
         )}
